@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schüler Fragen - Übersicht</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-align: center;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .questions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .question-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: white;
+            display: block;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .question-card:nth-child(1) {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .question-card:nth-child(2) {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        .question-card:nth-child(3) {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        .question-card:nth-child(4) {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+        .question-card:nth-child(5) {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        .question-card:nth-child(6) {
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+        }
+        .question-card:nth-child(7) {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+        .question-number {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            font-size: 1em;
+            opacity: 0.95;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .questions-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .question-card {
+                padding: 20px;
+            }
+            .question-title {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Schüler Fragen</h1>
+        <p class="subtitle">Wählen Sie eine Frage aus:</p>
+        <div class="questions-grid">
+            <a href="frage1.html" class="question-card">
+                <div class="question-number">Frage 1</div>
+                <div class="question-title">Entzündungszeichen</div>
+            </a>
+            <a href="frage2.html" class="question-card">
+                <div class="question-number">Frage 2</div>
+                <div class="question-title">Wundarten</div>
+            </a>
+            <a href="frage3.html" class="question-card">
+                <div class="question-number">Frage 3</div>
+                <div class="question-title">Dekubitus</div>
+            </a>
+            <a href="frage4.html" class="question-card">
+                <div class="question-number">Frage 4</div>
+                <div class="question-title">Dekubitus-Stadien</div>
+            </a>
+            <a href="frage5.html" class="question-card">
+                <div class="question-number">Frage 5</div>
+                <div class="question-title">Druckstellen</div>
+            </a>
+            <a href="frage6.html" class="question-card">
+                <div class="question-number">Frage 6</div>
+                <div class="question-title">Moderne Wundversorgung</div>
+            </a>
+            <a href="frage7.html" class="question-card">
+                <div class="question-number">Frage 7</div>
+                <div class="question-title">Dekubitusprophylaxe</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
